@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Jiayi Blog: Post 1</title>
+		<link href="projectstyle.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<nav>
+					<ul>
+						<li>
+							<a href="#"><img id = "humButton" src="photos/button1.png" alt="image"></a>
+							<ul id="submenu">
+								<li><a href="project06.html">File System</a></li>
+								<li><a href="project05.html">Network Protocol</a></li>
+								<li><a href="project04.html">Weather App</a></li>
+								<li><a href="project03.html">Word Game</a></li>
+								<li><a href="project02.html">Implement Cache</a></li>
+								<li><a href="project01.html">Photobooth</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<h1><a href="index.html">portfolio<br>home page</a></h1>
+			</header>
+			<div id="top">
+				<div id="div1">				
+				</div>
+				<div id="div2">	
+					<ul>
+						<li class="list"><a href="project01.html">View My Previous Project</a></li>
+						<li id="mainlist"><a href="#">Welcome to My Projects Page,Project Number2:Network Protocol</a></li>
+						<li class="list"><a href="project03.html">View My Next Project</a></li>		
+					</ul>	
+				</div>
+			</div>
+			<section>
+				<article>
+					<h2>Network Protocol</h2>
+					<h3>Technology: JAVA.</h3>
+					<p> 						
+						In this phase we will develop a discrete event simulation of the transmitter shown in Figure 1. In the following discussion, the link processor will be referred to as the server and the buffer as the queue. We will assume that the queue and the server have the following characteristics:<br>1.The queue can hold a maximum number of packets denoted by MAXBUFFER. (Make sure that you can simulate the case when the buffer size is infinite (i.e., no packets are dropped.)<br>2.The arrivals to the queue follow these characteristics: There is only one arrival at a particular instant of time; The inter-arrival time between packets follows a negative exponential distribution with rate λ packets/second.<br>3.The server transmits the packets one at a time in a FIFO (first-in first-out) order.<br>4. The length of the packets varies and hence the transmission time also varies. The transmissions time is also negative exponentially distributed with rate μ packets/second.
+					<h3>More details about this project</h3>
+					<p>
+						As mentioned before, in discrete event simulation, we only consider the points in time when the events in consideration occur. In our case, there are two events, 1) the arrival event and 2) the departure event. The departure events depend on the arrival events, since packets may get processed only upon arrival. So the key idea is that we will generate arrival events and create appropriate departure events and monitor the state of the queue and the server to determine the average queue-length and the mean server utilization.
+					</p>
+					<h3>conclution and some pictures</h3>
+					<p>
+						In this project I use java to implement a Network Protocol. It consists of double linked list to maintain a random event list with a particular distribution function. Then transmits packet into the link and a finite buffer,  a finite queue, to hold packets wait to server. Collect statistics to calculate the meaning of event waiting time and the number of package dropped.<br>
+					</p>
+					<div>
+						<img src="photos/network1.png" alt="image" width="90%">
+						<img src="photos/network2.png" alt="image" width="90%">
+					</div>
+				</article>
+			</section>
+			<footer>
+				<div id="fleft">
+					<p>EMAIL: jiawa@ucdavis.edu</p>
+					<p>PHONE: 6509336939</p>
+				</div>
+				<div id="fright">
+					<p>All content @ 2017</p>
+					<p><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fdes117.space%2Fsp2017-mead%2Fziwli%2Fblog%2Findex.html">Valid HTML5</a></p>
+				</div>
+			</footer>
+
+
+		</div>
+
+	</body>
+</html>

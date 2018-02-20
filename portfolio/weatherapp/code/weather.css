@@ -1,0 +1,340 @@
+body{
+	background: linear-gradient(to bottom,rgb(36, 165, 220),rgb(37, 35, 98));
+	min-height: 1080px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	height:100%;
+}
+#container{
+	margin:0 auto;
+}
+#menuIcon{
+	float: right;
+	width: 30px;
+	height: 30px;
+	display: none;
+}
+#top{
+	display: flex;
+	flex-direction: row;
+	height: 200px;
+	border: none;
+}
+
+#titles{
+	flex:1;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+#todayTime{
+	display: flex;
+	flex-direction: row;
+	border: none;
+	padding-top: 30px;
+	height: 50px;
+	text-align: center;
+}
+
+#today{
+	flex:1;
+	font-style: serif;
+	font-size: 25px;
+	color: #FFFFFF;
+	justify-content: center;
+	float: right;
+	text-align: center;
+}
+			
+#time{
+	flex:1;
+	font-size: 25px;
+	color: #FFFFFF;
+	text-align: left;
+
+}
+		
+#date{
+	font-style: serif;
+	font-size: 15px;
+	color: #FFFFFF;
+	border: none;
+	text-align: center;
+}
+	
+#more_city{
+	flex:1;
+}
+		
+#zip_ifo{
+	padding-top: 60px;
+}
+
+#zip_ifo input{
+	background-color: #B6DFF0;
+	width: 80%;
+	height: 20px;
+	font-size:15px;
+	border-radius: 12px;
+	text-align: center;
+}
+
+#submit_ifo{
+	text-align: right;
+	float: right;
+	padding-top: 5px;
+}
+			
+#submit_ifo button{
+	background-color: #00BCF7;
+	border: none;
+	border-radius: 12px;
+	color: #FFFFFF;
+}
+
+#middle{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	height: 230px;
+}
+	#imageifo{
+		margin:0;
+		background-color: color: #FFFFFF;
+	}
+		#image{
+			margin: 0;
+			padding-right: 70px;
+			padding-top: 20px;
+		}
+	#city_ifo{
+		font-style: serif;
+		color: #FFFFFF;
+	}
+		#location{
+			font-size: 25px;
+		}
+		#tempreture{
+			font-size:80px;
+		}
+		#degree_sign{
+			padding-top: 40px;
+			padding-right: 10px;
+			width: 30%;
+		}
+		#fsign{
+			text-transform: uppercase;
+			margin:0;
+			padding-bottom: 40px;
+			font-style: serif;
+			color: #FFFFFF;
+			font-size: 25px;
+		}
+
+		#humidityifo{
+			display: flex;
+			flex-direction: row;
+			font-style: serif;
+			color: #FFFFFF;
+			padding-left: 60px;
+			padding-top: 50px;
+			padding-bottom: 0px;
+			width:40px;		
+		}
+			#drop_sign{
+				padding-top: 16px;
+				padding-right: 10px;
+				width: 25%;
+				height: 7%;
+			}
+		#windifo{
+			display: flex;
+			flex-direction: row;
+			font-style: serif;
+			color: #FFFFFF;
+			padding-left: 60px;
+			width:40px;
+		}
+			#wind_sign{
+				padding-top: 16px;
+				padding-right: 7px;
+				width: 35%;
+				height: 10%;
+			}
+
+
+
+
+
+
+#down{
+	width: auto;
+    min-width: 481px;
+    padding: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;
+    text-align: justify;
+}
+	.day_div{
+		color: #FFFFFF;
+		font-style: serif;
+		font-size: 18px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.weather_div{
+		color: #FFFFFF;
+		font-style: serif;
+		font-size: 18px;
+		padding-top: 10px;
+		padding-bottom: 20px;
+	}
+
+	.forecasts{
+		height: 300px;
+	    width: 200px;
+	    background:  #4481AB;
+	    filter: Alpha(opacity=60);
+	    border-style: none;
+	    border-radius: 25px;
+	    position: relative;
+	    transition-property: left;
+	    transition-duration: 1s;
+	    transition-timing-function: ease;
+	    display: flex;
+    	flex-direction: column;
+    	flex-shrink: 0;
+    	text-align: center;
+    	font-color: #FFFFFF;
+	}
+	.h_l{
+		display: flex;
+		flex-direction: row;
+		color:#FFFFFF;
+		font-size: 30px;
+		padding-top: 10px;
+		padding-left: 30px;
+		padding-right: 20px;
+	}
+	#day0_h,#day1_h,#day2_h,#day3_h,#day4_h,#day5_h,#day6_h,#day7_h,#day8_h,#day9_h{
+		margin:0 auto;
+	}
+	#sign_l{
+		width: 6%;
+		height:6%;	
+		padding-right: 30px;
+
+	}
+	#sign_h{
+		width: 6%;
+		height:6%;		
+		margin:0 auto;
+		padding-right: 10px;
+	}
+
+#foot{
+	display: flex;
+	flex-direction: row;
+	padding-top: 20px;
+}
+
+#f_button{
+	flex: 1;
+}
+
+#f_button p{
+	color: #FFFFFF;
+	float: left;
+}
+
+#b_button{
+	flex: 1;
+}
+
+#b_button p{
+	color: #FFFFFF;
+	float: right;
+}
+
+#f_button p button,#b_button p button{
+	background-color: #2B82AF;
+	border-radius: 50%;
+	border: none;
+}
+
+@media (max-width: 640px){
+	body{
+		margin:0 auto;
+	}
+	#submit_ifo{
+		display: none;
+	}
+	#menuIcon{
+		display: block;
+	}
+	#middle{
+		display: none;
+	}
+	#f_button,#b_button{
+		display: none;
+	}
+	.forecasts{
+		display: none;	
+		text-align: center;	
+	}
+	#f0{
+		display: block;
+		height: 400px;
+		width: 80%;
+		margin: 0 auto;
+    	position: relative;
+	}
+	#day0_image{
+		padding-left: 0px;
+		height: auto;
+	}
+	#block0{
+		margin-top: 40px;
+	}
+	.h_l{
+		padding-top: 60px;
+	}
+	#sign_l,#sign_h
+	{
+		width: 3%;
+		height: 3%;
+	}
+}	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

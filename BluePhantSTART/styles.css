@@ -1,0 +1,357 @@
+/*********** CSS RESET ***************/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/************** End CSS Reset ***************/
+
+body {
+  background: url(images/background.jpg) repeat;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  color: #333;
+  padding: 50px 0;
+}
+
+.container {
+  width: 1020px;
+  margin: auto;
+  overflow: hidden;
+}
+
+#top, #middle, #mainnav {
+  margin-bottom: 20px;
+}
+
+.half {
+  width: 470px;
+  float: left;
+  padding: 30px 20px;
+  min-height: 270px;
+}
+
+.left {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.right {
+  background: rgba(9, 91, 128, 0.1);
+  text-align: center;
+}
+
+.column {
+  width: 300px;
+  float: left;
+  padding: 20px;
+}
+
+#middle {
+  background: rgba(206, 205, 175, 0.3);
+}
+
+footer {
+  background: #a1def8;
+  padding: 20px 0;
+  -webkit-box-shadow: 0 10px 10px 10px #B5B5B5;
+  box-shadow: 0 10px 10px 5px #B5B5B5;
+}
+
+
+/*************** header styles ***************/
+
+header {
+  background: #fff;
+  -webkit-box-shadow: 0 -10px 10px 0 #B5B5B5;
+  box-shadow: 0 -10px 10px 0 #B5B5B5;
+  overflow: hidden;
+}
+
+header img {
+  display: block;
+}
+
+#toplogo {
+  float: left;
+  margin: 30px 0 0 30px;
+}
+
+#toplogo h1 {
+  position: absolute;
+  left: -9999px;
+}
+
+#topphoto {
+  float: right;
+}
+
+
+/*********** Navigation Styles **********/
+
+#mainnav {
+  height: 50px;
+  background: #e1e0c5;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #e1e0c5 0%, #cccbac 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #e1e0c5 0%, #cccbac 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #e1e0c5 0%, #cccbac 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e0c5', endColorstr='#cccbac', GradientType=0);
+  /* IE6-9 */
+}
+
+#mainnav>ul>li {
+  float: left;
+}
+
+#mainnav>ul {
+  overflow: hidden;
+  border-left: 1px solid #c0bf9e;
+}
+
+#mainnav>ul>li>a {
+  display: block;
+  width: 169px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-right: 1px solid #c0bf9e;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #333;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+#mainnav>ul>li:last-of-type>a {
+  width: 339px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f769a2+0,e24484+100 */
+  background: #f769a2;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f769a2 0%, #e24484 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f769a2 0%, #e24484 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f769a2 0%, #e24484 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f769a2', endColorstr='#e24484', GradientType=0);
+  /* IE6-9 */
+  text-shadow: 1px 1px 1px #fd97c0;
+}
+
+#mainnav>ul>li>a:hover {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a1def8+0,74d2f7+100 */
+  background: #a1def8;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #a1def8 0%, #74d2f7 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #a1def8 0%, #74d2f7 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #a1def8 0%, #74d2f7 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1def8', endColorstr='#74d2f7', GradientType=0);
+  /* IE6-9 */
+  text-decoration: none;
+}
+
+#mainnav>ul>li:last-of-type>a:hover {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d63475+0,b72d6e+100 */
+  background: #d63475;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #d63475 0%, #b72d6e 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #d63475 0%, #b72d6e 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #d63475 0%, #b72d6e 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d63475', endColorstr='#b72d6e', GradientType=0);
+  /* IE6-9 */
+}
+
+#mainnav>ul>li>ul {
+  position: absolute;
+  left: -10000px;
+  background: #c8c7a7;
+}
+
+#mainnav>ul>li:hover>ul {
+  left: auto;
+}
+
+#mainnav>ul>li>#megamenu {
+  position: absolute;
+  left: -10000px;
+  background: #c8c7a7;
+}
+
+#mainnav>ul>li:hover>#megamenu {
+  left: auto;
+}
+
+#mainnav>ul>li>ul>li>a {
+  display: block;
+  padding: 18px;
+  color: #333;
+}
+
+#mainnav>ul>li>ul>li>a:hover {
+  display: block;
+  padding: 20px;
+  background: #afe0f5;
+  color: #333;
+  text-decoration: none;
+}
+
+.menucol {
+  float: left;
+  padding: 20px;
+}
+
+.menucol h3 {
+  font-style: italic;
+  font-weight: 600;
+  color: #237395;
+  margin-bottom: 15px;
+  ;
+}
+
+.menucol a {
+  color: #666;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.menucol a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+
+/******** Typography ********/
+
+.left h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #666;
+  margin-bottom: .5em;
+}
+
+.right h2 {
+  font-size: 40px;
+  font-weight: 600;
+  font-style: italic;
+  color: #666;
+  margin-bottom: .5em;
+}
+
+.right p {
+  font-size: 24px;
+  color: #666;
+  font-style: italic;
+}
+
+p {
+  line-height: 1.3em;
+  margin-bottom: 1em;
+  font-weight: 400;
+}
+
+.left h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: .5em;
+}
+
+a {
+  color: #237395;
+  text-decoration: none;
+}
+
+#middle h2 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: .5em;
+  color: #666;
+}
+
+#middle h3 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #e64a89;
+  text-transform: uppercase;
+  margin-bottom: .3em;
+}
+
+a:hover {
+  color: #5fbbe2;
+  text-decoration: underline;
+}
+
+footer h2 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #e64a89;
+  margin-bottom: .3em;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #666;
+}
+
+#rotator p {
+  display: none;
+}
+
+
+/*************** Social Icons *************/
+
+#social ul li {
+  float: left;
+}
+
+#social ul li a {
+  text-decoration: none;
+  font-size: 32px;
+  color: #666;
+  padding-right: 10px;
+}

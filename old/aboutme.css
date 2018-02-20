@@ -1,0 +1,173 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+*{
+  box-sizing: border-box;
+}
+/****************** End CSS RESET *****************/
+
+body {
+  font-family: Arial, sans-serif;
+  width: 1280;
+  margin:auto;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  margin: auto;
+  padding-top: 30px;
+  background-color: black;
+}
+h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  float: left;
+  width: 100%;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  line-height: 20px;
+}
+h1 a{
+  text-decoration: none;
+  color: white;
+}
+/********************* end of header ****************************/
+#top{
+  width: 100%;
+  height: 600px;
+  background: url(photos/aboutme.jpg) no-repeat;
+  background-size: cover;
+  margin:auto;
+}
+#div1{
+  width: 100%;
+  height: 520px;
+  background-color: black;
+  opacity: 0.0;
+  float: left;
+}
+#div2{
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  opacity: 0.7;
+  float: left;
+}
+#div2 ul{
+  width:100%;
+  height:40px;
+  text-align: center;
+}
+#div2 ul li{
+  height:40px;
+  float: left;
+}
+#div2 ul li a{
+  text-decoration: none;
+  font-weight: bold;
+  /*font-size: 20px;*/
+  line-height: 25px;
+}
+#mainlist{
+  width:100%;
+  padding-top: 15px;
+}
+#mainlist a{
+  color: white;
+  font-size: 23px;
+}
+/************************* end of top **************************/
+section{
+  width: 85%;
+  margin: auto;
+  margin-top: 30px;
+}
+h2{
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+h3{
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+p{
+  padding-top: 20px;
+  line-height: 25px;
+}
+#list{
+  width: 90%;
+  padding-top: 10px;
+  padding-left: 5%;
+  list-style-type: circle;
+}
+#list li{
+  line-height: 20px;
+}
+/*************************** end of section **************************/
+footer {
+  margin-top: 40px;
+  width: 100%;
+  height: 80px;
+  float: left;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+}
+footer p{
+  font-size: 12px;
+  padding-top: 5px;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
+#fleft, #fright {
+  width: 50%;
+  float: left;
+}

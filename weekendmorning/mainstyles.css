@@ -1,0 +1,286 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/****************** start outline of different part*****************/
+
+body{
+  font-family: GoudyStd-Bold;
+  background-color: #F7ECF4;
+}
+section{
+  width: 35%;
+  float: left;
+  height: 700px;
+  margin-left: 7%;
+  margin-top: 1%;
+}
+article{
+  height: 700px;
+  width: 50%;
+  float: left;
+  margin-top: 1%;
+}
+div{
+  float: left;
+}
+#top{
+  width:100%;
+  height: 60px;
+  float: left;
+  background: white;
+  border: solid 10px pink;
+}
+#bottom{
+  height: 600px;
+  float: left;
+  width: 100%;
+}
+#bottomleft{
+  border:solid 10px pink;
+  margin-top: 3%;
+  width:70%;
+  float: left;
+  height: 95%;
+}
+#bottomright{
+  margin-top: 8%;
+  width: 20%;
+  float: left;
+  border:solid 10px pink;
+  margin-left: 2%;
+  height: 80%;
+}
+#bottomright form{
+  padding-top: 20%;
+}
+
+/*********start differnt part's image size change*********/
+section img{
+  height: 90%;
+  width: auto;
+  border: solid 20px pink;
+}
+#top img{
+  width: 60px;
+  height: auto;
+  float: left;
+  padding-top: 3px;
+  padding-left: 7%;
+}
+#bottomleft img{
+  width: 200px;
+  padding-left: 7%;
+  padding-top: 55px;
+  height:auto;
+  float: left;
+  animation: shake 0.9s;
+  animation-iteration-count: 5;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+/**********************start about the font************************/
+h1{
+  padding-left: 15%;
+  padding-top: 20px;
+  font-size: 25px;
+  color:#727272;
+}
+form {
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 100px;
+  color:#727272;
+}
+input{
+  margin-right: 10px;
+  width: 20px;
+  height:15px;
+}
+/**********************here is for footer********************************************/
+
+footer{
+  padding-top: 25px;
+  width: 100%;
+  margin:auto;
+  text-align: center;
+  font-size: 16px;
+  color: pink;
+  float: left;
+}
+footer p {
+  padding-top: 2px; 
+  line-height: 18px;
+  font-size: 12px;
+}
+footer a {
+  text-decoration: none;
+  color: pink;
+  text-align: center;
+}
+#fleft, #fright {
+  width: 50%;
+  float: left;
+  margin:auto;
+}
+/**********************here is work for the viewport change*************************************/
+
+@media (max-width: 1362px){
+  section{
+    background-color: pink;
+    width: 80%;
+    float: none;
+    height: 600px;
+    margin-left: 10%;
+    margin-top: 2%;
+    text-align: center;
+    
+  }
+  section img{
+    height: 100%;
+    width: auto;
+    border: none;
+    display:inline;
+
+  }
+  article{
+    height: 750px;
+    width: 90%;
+    float: left;
+    margin-top: 1%;
+    margin-left: 5%;
+  }
+  #top img{
+    width: 60px;
+    height: auto;
+    float: left;
+    padding-top: 3px;
+  }
+  #bottom{
+    margin-left: 2.5%;
+  }
+  #bottomleft{
+    margin-top: 3%;
+  }
+  #bottomright{
+    margin-top: 3%;
+  }  
+  #bottomleft img {
+    width: 200px;
+  } 
+  footer{
+    padding-top: 2px;
+  }
+}
+@media (max-width: 768px){
+  #top img{
+    width: 60px;
+    height: auto;
+    float: left;
+    padding-top: 3px;
+  }  
+  #bottomleft img {
+    width: 30%;
+  } 
+  #bottomleft{
+    width: 90%;
+    margin-top: 3%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #bottomright{
+    position:absolute;
+    border: none;
+    padding-left: 62%;
+     padding-top: 10%;
+  }
+  form{
+    font-size: 18px;
+    line-height: 80px;
+  }   
+}
+@media (max-width: 635px){
+  #bottomright{
+    padding-top: 70%;
+    padding-left: 10%;
+    width: 200px;
+  }
+  form{
+    line-height: 20px;
+  }
+  h1{
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

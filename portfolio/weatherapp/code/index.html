@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>weather</title>
+	<link rel="stylesheet" type="text/css" href="weather.css">
+	
+</head>
+<body onresize="initUI()">
+        <header>
+        	<img src="../WeatherApp/plus.png" alt="plus" id="menuIcon">
+        </header>
+
+
+		<div id = "top">
+			<div id = "titles">
+			    <div id = "todayTime">
+			    	<span id = "today">Today</span>
+			    	<span id = "time"></span>
+			    </div>		  
+				<p id = "date"></p>
+			</div>
+
+			<div id = "more_city">
+				<div id = "zip_ifo">
+					<input id="zipbox" type="text" placeholder="enter zip" style="border: none;">
+				</div>
+				<div id = "submit_ifo">
+					<button onclick="gotNewPlace()">submit</button>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div id = "middle">
+			<div id="imageifo">
+				<img id = "image">
+			</div>
+			<div id="city_ifo">
+				<div id = "location"></div>
+				<div id = "tempreture"></div>
+				<div id = "weather"></div>
+			</div>
+			<div>
+				<p id = "fsign"><img src="../WeatherApp/degree.png" alt="degree" id="degree_sign">f</p>
+			</div>
+			<div id = "h_and_w">
+				<div id = "humidityifo">
+					<img src="../WeatherApp/drop.png" alt = "drop" id = "drop_sign">
+					<p id = "humidity"></p>
+					<p> % </p>
+				</div>	
+				<div id = "windifo">
+					<img src="../WeatherApp/wind.png" alt = "wind" id = "wind_sign">
+					<p id = "wind"></p>
+					<p> mph </p>
+				</div>	
+			</div>
+		</div>
+
+			
+		<div id = "down">
+			<div class = "forecasts" id = "f0">
+				<div id="block0">
+					<div id = "day0" class="day_div"></div>
+					<img id = "day0_image">
+					<div id = "day0_weather" class="weather_div"></div>
+					<div class = h_l>
+						<div id = "day0_h"></div>
+						<img src="../WeatherApp/degree.png" alt="degree" id="sign_l">
+						<div id = "day0_l"></div>
+						<img src="../WeatherApp/degree.png" alt="degree" id="sign_h">
+					</div>
+				</div>
+			</div>
+
+			<div class = "forecasts">
+				<div id="block1">
+					<div id = "day1" class="day_div"></div>
+					<img id = "day1_image">
+					<div id = "day1_weather" class="weather_div"></div>
+					<div class = h_l>
+						<div id = "day1_h"></div>
+						<img src="../WeatherApp/degree.png" alt="degree" id="sign_l">
+						<div id = "day1_l"></div>
+						<img src="../WeatherApp/degree.png" alt="degree" id="sign_h">
+					</div>
+				</div>
+			</div>
+
+			<div class = "forecasts">
+				<div id="block2">
+					<div id = "day2" class="day_div"></div>
+					<img id = "day2_image">
+					<div id = "day2_weather" class="weather_div"></div>
+					<div class = h_l>
+						<div id = "day2_h"></div>
+						<img src="../WeatherApp/degree.png" alt="degree" id="sign_l">
+						<div id = "day2_l"></div>
+						<img src="../WeatherApp/degree.png" alt="degree" id="sign_h">
+					</div>
+				</div>
+			</div>
+
+			<div class = "forecasts">
+				<div id="block3">
+					<div id = "day3" class="day_div"></div>
+					<img id = "day3_image">
+					<div id = "day3_weather" class="weather_div"></div>
+					<div class = h_l>
+						<div id = "day3_h"></div>
+						<img src="../WeatherApp/degree.png" alt="degree" id="sign_l">
+						<div id = "day3_l"></div>
+						<img src="../WeatherApp/degree.png" alt="degree" id="sign_h">
+					</div>
+				</div>
+			</div>
+
+			<div class = "forecasts">
+				<div id="block4">
+					<div id = "day4" class="day_div"></div>
+					<img id = "day4_image">
+					<div id = "day4_weather" class="weather_div"></div>
+					<div class = h_l>
+						<div id = "day4_h"></div>
+						<img src="../WeatherApp/degree.png" alt="degree" id="sign_l">
+						<div id = "day4_l"></div>
+						<img src="../WeatherApp/degree.png" alt="degree" id="sign_h">
+					</div>
+				</div>
+			</div>
+
+			<div class = "forecasts">
+				<div id="block5">
+					<div id = "day5" class="day_div"></div>
+					<img id = "day5_image">
+					<div id = "day5_weather" class="weather_div"></div>
+					<div class = h_l>
+						<div id = "day5_h"></div>
+						<img src="../WeatherApp/degree.png" alt="degree" id="sign_l">
+						<div id = "day5_l"></div>
+						<img src="../WeatherApp/degree.png" alt="degree" id="sign_h">
+					</div>
+				</div>
+			</div>
+
+			<div class = "forecasts">
+				<div id="block6">
+					<div id = "day6" class="day_div"></div>
+					<img id = "day6_image">
+					<div id = "day6_weather" class="weather_div"></div>
+					<div class = h_l>
+						<div id = "day6_h"></div>
+						<img src="../WeatherApp/degree.png" alt="degree" id="sign_l">
+						<div id = "day6_l"></div>
+						<img src="../WeatherApp/degree.png" alt="degree" id="sign_h">
+					</div>
+				</div>
+			</div>
+
+			<div class = "forecasts">
+				<div id="block7">
+					<div id = "day7" class="day_div"></div>
+					<img id = "day7_image">
+					<div id = "day7_weather" class="weather_div"></div>
+					<div class = h_l>
+						<div id = "day7_h"></div>
+						<img src="../WeatherApp/degree.png" alt="degree" id="sign_l">
+						<div id = "day7_l"></div>
+						<img src="../WeatherApp/degree.png" alt="degree" id="sign_h">
+					</div>
+				</div>
+			</div>
+
+			<div class = "forecasts">
+				<div id="block8">
+					<div id = "day8" class="day_div"></div>
+					<img id = "day8_image">
+					<div id = "day8_weather" class="weather_div"></div>
+					<div class = h_l>
+						<div id = "day8_h"></div>
+						<img src="../WeatherApp/degree.png" alt="degree" id="sign_l">
+						<div id = "day8_l"></div>
+						<img src="../WeatherApp/degree.png" alt="degree" id="sign_h">
+					</div>
+				</div>
+			</div>
+
+			<div class = "forecasts">
+				<div id="block9">
+					<div id = "day9" class="day_div"></div>
+					<img id = "day9_image">
+					<div id = "day9_weather" class="weather_div"></div>
+					<div class = h_l>
+						<div id = "day9_h"></div>
+						<img src="../WeatherApp/degree.png" alt="degree" id="sign_l">
+						<div id = "day9_l"></div>
+						<img src="../WeatherApp/degree.png" alt="degree" id="sign_h">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id = "foot">
+			<div id = "f_button" >
+					<p><button onclick = "movePre()" = ""> < </button> previse forecasts</p>
+			</div>
+		    <div id = "b_button">			
+					<p>more forecasts <button onclick = "moveNext()"> > </button></p>
+		    </div>
+		</div>
+		
+		<script src="weather.js"></script>
+
+		<script src="https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='davis, ca')&format=json&callback=callbackFunction"></script>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

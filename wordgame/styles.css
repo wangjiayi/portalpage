@@ -1,0 +1,253 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/******************************** body and header and h **********************************/
+body{
+	background: linear-gradient(to bottom, #5D255A, #C393C0);
+	height:750px;
+}
+header{
+	width: 30%;
+	margin: auto;
+	margin-top: 20px;
+    padding: 10px;
+    height: 80px;
+}
+h1{
+	font-size: 35px;
+	font-weight: bold;
+	color:#EBDBEA;
+	text-transform: uppercase;
+	text-align: center;
+}
+h2{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+h3{
+	font-size: 20px;
+	color: #E1C9DF;
+	margin-top: 35px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+h4{
+	font-size: 12px;
+	padding-top: 5px;
+}
+p{
+	padding-top: 20px;
+	font-size: 18px;
+	line-height: 30px;
+	padding-left: 10%;
+}
+button,input{
+	cursor: pointer;
+	border: none;
+}
+button{
+	border-radius: 15%;
+}
+/******************* section set **********************************/
+section{
+	margin-left: 9%;
+	margin-right: 2%;
+	width: 40%;
+	float: left;
+	margin-top: 25px;
+	height:500px;
+	background-color: rgba(0,0,0,0.2);
+}
+section div{
+	width: 80%;
+	margin:auto;
+	margin-top: 19px;
+	height: 100px;
+	text-align: center;
+}
+form{
+	width: 38%;
+	display: block;
+	height: 55px;
+	float: left;
+	margin-right: 5%;
+	margin-left: 5%;
+	text-align: center;
+	border: solid 2px #C0C0C0;
+	margin-top: 19px;
+}
+#nounres{
+	color: yellow;
+}
+#verbres{
+	color: green;
+}
+#adres{
+	color: blue;
+}
+input{
+	width:80%;
+	margin-top: 8px;
+	background: #E1C9DF;
+	font-weight: bold;
+}
+section div button{
+	width: 33%;
+	margin-top: 25px;
+	background: #E1C9DF;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 20px;
+}
+section div p{
+	font-size: 15px;
+	height:20px;
+	padding-left: 2%;
+	padding-top: 5px;
+	font-weight: bold;
+}
+.yellow{
+	color:yellow;
+}
+.green{
+	color: green;
+}
+.blue{
+	color: blue;
+}
+/******************* article set **********************************/
+article{
+	margin-right: 9%;
+	width: 40%;
+	float: left;
+	margin-top: 25px;
+	height:500px;
+	background-color: rgba(0,0,0,0.2);
+	display: none;
+}
+article button{
+	margin-top: 25px;
+	margin-left: 25%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 20px;
+	background: #E1C9DF;
+}
+article input{
+	width: 15%;
+	text-align: center;
+	background-color: black;
+}
+.insidenoun{	
+	color:yellow;	
+}
+.insideverb{
+	color:green;	
+}
+.insideadj{
+	color: blue;
+}
+
+/******************* footer set **********************************/
+
+footer{
+	padding-top: 25px;
+	width: 100%;
+	margin:auto;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+	float: left;
+}
+footer p {
+  padding-top: 2px; 
+  line-height: 18px;
+  font-size: 12px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+#fleft, #fright {
+  width: 50%;
+  float: left;
+  margin:auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

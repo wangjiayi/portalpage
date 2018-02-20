@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>madlibs</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>
+		word-article game
+		</h1>
+	</header>
+
+	<section>
+		<div>
+			<h2 class="yellow">yellow" noun</h2>
+			<form >
+				<input id = "noun" type="text" name="noun" placeholder="Please type noun">
+				<input type="button" name="submitnoun" value="submit" onclick="trysubmit()">
+			</form>
+			<form >
+				<h4 class="yellow">Input Result</h4>
+				<p id = "nounres"></p>
+			</form>
+		</div>
+
+		<div>
+			<h2 class="green">"green" verb</h2>
+			<form >
+				<input id ="verb" type="text" name="verb" placeholder="Please type verb">
+				<input type="button" name="submitverb" value="submit" onclick="trysubmit()">
+			</form>
+			<form>
+				<h4 class="green">Input Result</h4>
+				<p id = "verbres"></p>
+			</form>
+		</div>
+
+		<div>
+			<h2 class="blue">"blue" adjective</h2>
+			<form>
+				<input id ="adverb" type="text" name="adverb" placeholder="Please type adverb">
+				<input type="button" name="submitadverb" value="submit" onclick="trysubmit()">
+			</form>
+			<form >
+				<h4 class="blue">Input Result</h4>
+				<p id = "adres"></p>
+			</form>			
+		</div>
+		<div>
+			<h3>Please make sure submit "word" then press "start" button</h3>
+			<button onclick="startgame()">start</button>
+		</div>
+	</section>
+	<article id="art">
+		<div>
+			<h3>I got a few jokes online and used the words you just filled in to make some changes to these:</h3>
+			<p>Father: Jack, why do you <input class = "insideverb" type="text" value="drink"> so much water?<br>
+			Jack: I have just had an <input class = "insidenoun" type="text" value="apple">, Dad.<br>
+			Father: What"s that got to do with it?<br>
+			Jack: I forgot to wash the <input class = "insidenoun" type="text" value="apple">.<br>
+			Jack: Mom, do you know what I"m going to give you for your birthday?<br>
+			Mom: No, Honey, what?<br>
+			Jack: A <input class = "insideadj" type="text" value="nice"> teapot.<br>
+			Mom: But I"ve got a <input class = "insideadj" type="text" value="nice"> teapot.<br>
+			Jack: No, you haven"t. I"ve just dropped it.</p>
+		</div>
+		<div>
+			<button onclick="onboard()">clear all</button>
+			<button onclick="original()">original</button>
+		</div>
+		
+	</article>
+	<footer>
+		<div id="fleft">
+			<p><a href="mailto:wjiayi01@gmail.com">wjiayi01@gmail.com</a></p>
+			<p>PHONE: 123456789</p>
+		</div>
+		<div id="fright">
+			<p><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></p>
+			<p><a href="https://validator.w3.org/check?uri=referer">Valid HTML5</a></p>
+		</div>
+	</footer>
+	<script src="script.js"></script>
+	<!-- <script>onboard()</script> -->
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Jiayi Blog: Post 1</title>
+		<link href="projectstyle.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<nav>
+					<ul>
+						<li>
+							<a href="#"><img id = "humButton" src="photos/button1.png" alt="image"></a>
+							<ul id="submenu">
+								<li><a href="project06.html">File System</a></li>
+								<li><a href="project05.html">Network Protocol</a></li>
+								<li><a href="project04.html">Weather App</a></li>
+								<li><a href="project03.html">Word Game</a></li>
+								<li><a href="project02.html">Implement Cache</a></li>
+								<li><a href="project01.html">Photobooth</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<h1><a href="index.html">portfolio<br>home page</a></h1>
+			</header>
+			<div id="top">
+				<div id="div1">				
+				</div>
+				<div id="div2">	
+					<ul>
+						<li class="list"><a href="project05.html">View My Previous Project</a></li>
+						<li id="mainlist"><a href="#">Welcome to My Projects Page,Project Number6:Photobooth</a></li>
+						<li class="list"><a href="#">View My Next Project</a></li>		
+					</ul>	
+				</div>
+			</div>
+			<section>
+				<article>
+					<h2>Photobooth</h2>
+					<h3>Technology: Javascript, Nodejs, CSS and SQL</h3>
+					<p> 						
+						In this project user can upload their photos and add some tags for those photos. Also user can filter photos by tags and make appear their favriate only. All those photos will store in server and all tags will store in database. After user upload the photo I will use GOOGLE API to analysis the photo and give some tags for the user. user can delete anyone thay don't need. Here is show the images when I use it.<br>
+					</p>
+					<h3>Some images when I use this webpage:</h3>
+					<p>Here is the first time when you use this one</p>
+					<img src="photos/photobooth1.png" alt="image" width="90%">
+					<p>Here is after you uploaded some images and all those images will store at database</p>
+					<img src="photos/photobooth2.png" alt="image" width="90%">
+					<h3>More details about this project</h3>
+					<p>
+						First part of implementation<br>In this first assignment, we will get images uploaded and displayed, and allow the user to add and delete labels and pick favorites, but we will not get the automatic labels (the cool part) or implement the filtering by labels or favorites. Of course, feel free to move on to that part if you want!See the lecture from 5/12 for uploading files. I would start with this example, and then display only the image that was just uploaded, just to get started. Notice that since the image is uploaded to /public, you can just use the image's URL on the server as its "src" property.Getting the image to display while it is uploading is, suprisingly, harder! Here's an example of showing an image loaded from a file dialog, and fading it out: fader.html, fader.js, fader.cssNext, work on the browser code for adding labels and deleting labels. Send each label to the server as an AJAX request; see the lecture from 5/10. You can make up your own code for how to communicate from the browser to the server, using queries. For instance, maybe "delete label 'ice cream' from image 'picnicDay.jpg'" would produce the URL 138.68.25.50:????/change?img=picnicDay.jpg&label=ice%20cream&op=delete. Don't do anything on the server yet, except successfully parse the queries and respond the the HTTP requests.On the server, set up a database to contain the names of all the photos, their labels, and their "favorite" tags. We'll be using the Node SQLite3 module. The database should have just one table, with each row storing the name of an image file (text), a string containing its labels, separated by commas (text), and a flag indicating whether it is a favorite or not (integer, 0 or 1). The file name should be the primary key.Now get the data into the database; when the user uploads an image make a new row in the database, when the user adds a label add it to label string, and when the user deletes a label, take it out of the label string, and when they "favorite" or "unfavorite" an image, change the integer value for "favorite".Now let's go back to the app. When it comes up, it should immediately show all the images in the database, with the labels under each image. To get them, you'll have to make an AJAX query to the server, and have the server dump the whole database, and send the data down to the browser as a JSON string in the body of the response object.
+						Second part of implementation<br>Recall that because of the Same Origin Policy, we need to access the GCV API from the server. So the sequence of operations (some of which you've already done) should be:User selects a file to upload, and hits the "upload" button.Button function on browsers puts together POST request and sends to server.Server gets POST request and directs file to public directory.At end of upload (in the "end" event handler), server puts together a PUT request to the GCV API, with a link to the photo and requesting "label Detection". Server gets response from API and runs callback function. In the callback ("APIcallback"), the server should add the new labels to the database, and also put the labels into the response to send back to the browser. Browser gets response, and displays the labels. Other functions to implement for the final product: Splash page. Filtering by label, and turning filter on and off. Filtering by favorites is 2 points extra credit. Progress bar is 2 points extra credit The image in the design documents for the filter button is confusing and not so easy to implement (no submit button - this is possible, but a bit of a pain). Instead, you can have the following as the inactive state of the nav bar: and when filter is clicked, the input box and a submit button appear. When filter is clicked again, the input box and submit button disappear. You can use the CSS display: none property to make things appear and disappear in the nav bar column, or you can add and subtract things from the DOM.
+					</p>
+				</article>
+			</section>
+			<footer>
+				<div id="fleft">
+					<p>EMAIL: jiawa@ucdavis.edu</p>
+					<p>PHONE: 6509336939</p>
+				</div>
+				<div id="fright">
+					<p>All content @ 2017</p>
+					<p><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fdes117.space%2Fsp2017-mead%2Fziwli%2Fblog%2Findex.html">Valid HTML5</a></p>
+				</div>
+			</footer>
+
+
+		</div>
+
+	</body>
+</html>
