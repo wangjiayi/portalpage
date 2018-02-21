@@ -1,0 +1,203 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/****************** start header *****************/
+
+body {
+  width: 100%;
+  height: auto;
+  background: #F9F9F9;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15px;
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  outline: none;
+}
+#mySketch {
+  width: 100%;
+  height:100px;
+  display: block;
+}
+#keyboard {
+  width: 100%;
+  height: 410px;
+  z-index: -1;
+  display: block;
+}
+
+#threeset, #threeset2 {
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+#fiveset, #fiveset2 {
+  position: relative;
+  display: inline-block;
+  width: 26.6667%;
+  height: 100%;
+  float: left;
+}
+
+#oneset {
+  width: 6.66%;
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  float: left;
+}
+
+button,input {
+  outline: none;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  float: left;
+}
+
+.whitekeybutton {
+  opacity: 0.5;
+  box-shadow: inset 1px 1px 6px 0px black, inset -1px -1px 6px 0px black, 1px 0px grey, -1px 0px grey;
+  border-radius: 0px 0px 4px 4px;
+  height: 100%;
+  position: relative;
+}
+
+.blackbutton {
+  height: 67%;
+  top: 0px;
+  border-radius: 0px 0px 3px 3px;
+  position: absolute;
+  background: black;
+}
+
+#white_c, #white_e, #white_c2, #white_e2 {
+  width: 32.8571%;
+  background: white;
+  cursor:pointer;
+}
+
+#white_d, #white_d2 {
+  width: 34.2857%;
+  cursor:pointer;
+
+}
+
+#blackbutton_c_d, #blackbutton_c_d2 {
+  width: 20%;
+  left: 20%;
+  cursor:s-resize;
+}
+
+#blackbutton_d_e, #blackbutton_d_e2 {
+  width: 20%;
+  right: 20%;
+  cursor:s-resize;
+}
+
+#white_f, #white_f2, #white_a, #white_a2, #white_g, #white_g2, #white_b, #white_b2 {
+  width: 25%;
+  cursor:pointer;
+}
+
+#blackbutton_f_g, #blackbutton_f_g2 {
+  width: 14.8936%;
+  left: 13.8298%;
+  cursor:s-resize;
+}
+
+#blackbutton_g_a, #blackbutton_g_a2 {
+  width: 14.8936%;
+  left: 42.5532%;
+  cursor:s-resize;
+}
+
+#blackbutton_a_b, #blackbutton_a_b2 {
+  width: 14.8936%;
+  right: 13.8298%;
+  cursor:s-resize;
+}
+
+#white_high_c {
+  width: 100%;
+  cursor:pointer;
+}
+/****************** start footer *****************/
+
+footer {
+  display: block;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  background-color: #303030;
+  margin-top: 150px;
+  position: absolute;
+}
+
+footer p {
+  padding-top: 10px;
+  font-size: 12px;
+  cursor:pointer;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+#fleft, #fright {
+  width: 50%;
+  float: left;
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Jiayi Blog: Post 1</title>
+		<link href="projectstyle07.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<section>
+				<article>
+					<h2>Noisy-Channel Model</h2>
+					<h3>Technology: Python, Static</h3>
+					<p> 						
+						This project will implement a noisy-channel model for spelling correction. This means creating an edit model (likelihood terms) and a language model (distribution in the noise channel model). At test time, a sentence with exactly one error will be passed into the edit model which will perform various edits and select the correction that gives the highest likelihood under the language model. The language model will finally be evaluated for accuracy over valid corrections, divided by the number of sentences tested.
+					</p>
+					<h3>More details about this project</h3>
+					<p>Implement  following methods:<br>Three language models are implemented, insertEdits(all edits formed by inserting a character into the word), transposeEdits(all edits formed by transposing two characters in the word), and replaceEdits(all edits formed by replacing a character with another).
+					<p>l use various language models to get better results by implement the following language models.<p></p>
+					<li>Smoothed Unigram Language Model: a unigram model with add- one smoothing otherwise known as a Laplace unigram language model.</li>
+					<li>Smoothed Bigram Language Model: a bigram model with add-one smoothing.</li>
+					<li>Backoff Language Model: use an unsmoothed bigram model with backoff. The backoff function will be a smoothed unigram model.</li>
+					<li>Interpolated Kneser- Ney</li>
+					<p>All language models have two functions: train and score.</p>
+					<li>
+						train(Corpus c): This function takes in a data corpus, iterates through each sentence and word and computes the counts of their occurrences or any other statistics necessary for the specific model. Note a datum consists of a word and error pair.
+					</li>
+					<li>score(List sentence): This function takes a list of strings that com- pose the sentence and returns the probability of the sentence with the candidate edit from your correctSentence function. Rather than tradi- tionally multiplying all probabilities together, it is important to accu- mulate the sum of their logs (equivalent) due to underflow problems. Use whatever data from the train method here.</li>
+					<p>Evaluating The Language Models</p>
+					</p>
+					<img src="photos/model.jpg" alt="model.jpg">
+				</article>
+			</section>
+			<footer>
+				<div id="fleft">
+					<p>EMAIL: 12345@ucdavis.edu</p>
+					<p>PHONE: 1234567890</p>
+				</div>
+				<div id="fright">
+					<p>All content @ 2017</p>
+					<p><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fdes117.space%2Fsp2017-mead%2Fziwli%2Fblog%2Findex.html">Valid HTML5</a></p>
+				</div>
+			</footer>
+
+
+		</div>
+
+	</body>
+</html>
