@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Jiayi Blog projectstyle08</title>
+		<link href="projectstyle08.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<section>
+				<article>
+					<h2>POS Tagging</h2>
+					<h3>Technology: Python, Perl, AI</h3>
+					<p> 						
+						This project is about POS tagging, which is part-of-speech tagging. POS tagging is widely used, and that it's widely seen in the NLP( Natural language processing) community as a solved problem (or at least well enough solved that most people don't put much effort into improving POS tagging for its own sake). For this assignment, I use the datasets provided by professor. 
+					</p>
+					<h3>More details about this project</h3>
+					<p>Task 1:<br>A learning curve is a useful tool that lets you visualize how a model's performance depends on the amount of training data. You can vary the amount of training data by creating smaller sub-corpora from the original full corpus. The learning curve plots a performance measure evaluated on a fixed test set (y-axis) against the training dataset size (x-axis). Generate a learning curve for the bigram HMM as we've provided it, implement and use baseline model to evaluate.</p>
+					<p>Task1:The first time I read the first 1000 lines of ptb.2-21.tgs and ptb.2-21.txt contents. Then calculate the number of words contained in the 1000 lines as training set. In accordance with this calculation, I increased 5000 lines each time, until the last read the 36000 lines of the file (because total lines are 39832, so I stopped at 36000 lines).<br>If lines: [0,1000], and words: 24358, and error is: 0.281651170326794<br>If lines: [0,6000], and words: 144361, and error is: 0.100331530273949<br>If lines: [0,11000], and words: 265464, and error is: 0.0789440885410175<br>If lines: [0,16000], and words: 385354, and error is: 0.0689732532342897<br>If lines: [0,21000], and words: 502802, and error is: 0.0647605753171972<br>If lines: [0,26000], and words: 621350, and error is: 0.0600742827230351<br>If lines: [0,31000], and words: 740746, and error is: 0.0574818655432859<br>If lines: [0,36000], and words: 859266, and error is: 0.0558865318942094<br>When the number of training sets is small, the error rate is very high. As the number of training sets increases, the error rate will be smaller. However, the change in error rate decreases very rapidly at the beginning of the training set, and then decreases slowly. In the process of running, I found that the training set my.hmm file generation will be much slower when the number of training sets becomeslarger. So the choice of training set should not very large, because when a critical point is reached, the error rate decreases very small, it should never reach 0. So through this analysis, I think the appropriate size of suitable training sets need to consider both the error rate to reduce very slow critical points and training speed.The learning curve by error rate drawn with Matplotlib is as follows:</p>
+					<img src="photos/pos1.jpg">
+					<p>Task 2:<br>Come up with a way to improve the model on the training data (no external resources). I implement a trigram HMM and smooth the probability estimates. Firstly, I modified the algorithm in the train_hmm.py file. I changed the way bigram was calculated to trigram. So, I want to modify the numerator and denominator in the formula for calculating the probability. I use a new variable called prevprevtag which is the word before prevtag and tag, then my denominator is count number of prevprevtag and prevtag together at the same time. So, the numerator is count number of prevprevtag, prevtag and tag together. Through such a likelihood calculation! I hope I can increase the accuracy of the relationship between parts of speech! Secondly, I modified the vertibri_public.py file because the bigram used previously only needs to consider the part of speech between two words at a time, and the current trigram needs to consider three. So I made changes to the trans section, but the emit part does not need to be changed. Moreover, because there is no use of smooth, blank lines appear. In response to such a problem, I used the method of math.log(0.000001) to avoid such a situation. Finally, I finished my train_hmm.py and vertibri_public.py files, generated the my_final2.hmm and my_final2.out files, and then I compared my_final2.out and the ptb.22.out file to get my error rate. The performance of my model on ptb.22 is show below and the out put file name is: my_final2.out. Word and sentence both improve about 0.02.</p>
+					<img src="photos/pos2.jpg">
+					<p>Task 3:<br>Train the baseline model and improved model on the Japanese and Bulgarian training datasets, and compare them on the test sets. Different languages have some differences in part-of-speech tagging and syntactic analysis. For example, English has a single plural, tense. So, a word in English is marked as a verb or noun, not much controversy. But in other languages it's not the same. So, if use this model for other language, the error rate will be high if this two language with big difference of part-of-speech tagging and syntactic analysis (Example of Japanese). And may lower if this two language with small difference of part-of-speech tagging and syntactic analysis (example of Bulgarian).</p>
+					<img src="photos/pos3.jpg">
+					
+
+				</article>
+			</section>
+			<footer>
+				<div id="fleft">
+					<p>EMAIL: 12345@ucdavis.edu</p>
+					<p>PHONE: 1234567890</p>
+				</div>
+				<div id="fright">
+					<p>All content @ 2017</p>
+					<p><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fdes117.space%2Fsp2017-mead%2Fziwli%2Fblog%2Findex.html">Valid HTML5</a></p>
+				</div>
+			</footer>
+
+
+		</div>
+
+	</body>
+</html>
