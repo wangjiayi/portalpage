@@ -1,3 +1,30 @@
+'use strict'
+// whitekeybutton[0].addEventListener('onclick',function(){
+//     whitekeybutton.style.backgroundColor = "green";
+// });
+$(document).ready(function(){
+    // $("#fright").click(function(){
+    //     alert("tryeyryyey");
+    // });
+    $(".whitekeybutton").on( "click", function(){
+        $(this).css('background-color', 'gray');
+        var time = 200;
+        setTimeout(function() {
+            $('.whitekeybutton').css("background-color", "white");
+        }, time);
+    });
+    $(".blackbutton").on( "click", function(){
+        $(this).css('background-color', 'gray');
+        var time = 200;
+        setTimeout(function() {
+            $('.blackbutton').css("background-color", "black");
+        }, time);
+    });
+    // $('#keyboard').click(function(){
+
+    //     alert('afwe');
+    // });
+});
 //get context 
 (function() {
     'use strict'
@@ -24,14 +51,14 @@
 
 
     var keyboards;
-    // 排列多组键盘元素
-    // 以降序方式注册键盘元素的点击
+    // Arrange multiple sets of keyboard elements
+    // Register keyboard element clicks in descending order
     keyboards = Array.prototype.slice.call(document.getElementsByClassName('keyboards'));
     keyboards.reverse().map(function(keyboard, index){
         var i;
         var frequency;
-        // 通过声音从参考声音中发出的声音来查找频率比率
-        frequency = 1.2;
+        // Find the frequency ratio by the sound the sound makes from the reference sound
+        frequency = 1;
         for (i = 0; i < index; i++) {
             frequency /= 1.059463;
         }
@@ -39,10 +66,10 @@
             var bufferSource;
             bufferSource = audio_con.createBufferSource();
             bufferSource.buffer = musicdata;
-            // 通过更改声源播放速度比来调整声源高度
+            // Adjust the sound source height by changing the sound source playback speed ratio
             bufferSource.playbackRate.value = frequency;
             bufferSource.connect(audio_con.destination);           
-            bufferSource.start(0);
+            bufferSource.start(1);
         });
     });
 })();
