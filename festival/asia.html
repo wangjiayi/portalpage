@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>blogpage</title>
+	<link rel="stylesheet" type="text/css" href="blogs.css">
+</head>
+<body>
+<main>
+	<section>
+		<p><a href="index.html">HOME</a></p>		
+	</section>
+	<article id="container">
+		<div id="m_left_top">
+		<h1>Asia.</h1>
+			<p>Asian festivals are mostly ancient and traditional. These festivals embody the Oriental faith, morality, emotion and romance of the East. The most important festival for Asians is the new year of various traditional calendars. Such as China, North Korea, Mongolia, Vietnam, Singapore and other countries of the Chinese New Year Spring Festival.</p><br>
+			<p>Welcome to share your festival photo like image below and add some information to them.</p>
+		</div>
+		<div class = "article" id = "article1">
+			  <p>Traditional Chinese festivals have obvious social characteristics. As the most important traditional festival in China, the Spring Festival originated in the Qin Dynasty and is scheduled for January 1 of the lunar year. Starting from December 23 of the lunar calendar, the people started to carry out various celebrations and lasted until the Lantern Festival. Spring Festival customs are numerous, such as cleaning, eating reunion dinner. There are enveloped in a thick atmosphere of festive everywhere.</p>
+			  <button class = "reset" id = "reset1">OK</button>
+		</div>
+		<div class = "article" id = "article2">
+			  <p>In the hearts of the Chinese people, the Mid-Autumn Festival is a family reunion festival, because the day in China's lunar August 15, that day is the moon most round. In chinese traditional culture, the circle represents a family reunion and unity, so the moon most round is means the family together. This is why the moon cake must be made round. It represents the unity of the family together.</p>
+			  <button class = "reset" id="reset2">OK</button>
+		</div>
+		<div id="m_right_top">
+			<div id = "userupload">
+				<p>Share Festival Photos:</p>
+			</div>
+			<div id="firstbox">
+				<input type="file" id="choose">
+				<input id="upload" type="submit">
+			</div>
+		</div>
+		<div id="middle">
+			<div class = "photoblog" id = "div0">
+				<img src="photos/asia/1.jpg" id = img0>
+				<div class = "tag" id = "tag0">
+					<p class = "myp">Country: China</p>
+					<p class = "myp">Name: Spring Festival</p>
+					<p class = "myp">Date: Lunar January 1</p>
+				</div>
+				<input type="text" class="inputtag" id = "inputtag0" placeholder="enter some commands">
+				<button class="add" id = "add0" onclick="showtag(this.id)">Add</button>
+			</div>
+
+			<div class = "photoblog" id = "div1">
+				<img src="photos/asia/3.jpg" id = img1>
+				<div class = "tag" id = "tag1">
+					<p class = "myp">Country: China</p>
+					<p class = "myp">Name: Mid-Autumn Festival</p>
+					<p class = "myp">Date: Lunar August 15</p>
+				</div>
+				<input type="text" class="inputtag" id = "inputtag1" placeholder="enter some commands">
+				<button class="add" id = "add1" onclick="showtag(this.id)">Add</button>
+			</div>
+		</div>
+	</article>
+	<footer>
+				<div id="fleft">
+					<p>EMAIL: 12345@ucdavis.edu</p>
+					<p>PHONE: 1234567890</p>
+				</div>
+				<div id="fright">
+					<p><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></p>
+					<p><a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fdes117.space%2Fsp2017-mead%2Fziwli%2Fblog%2Findex.html">Valid HTML5</a></p>
+				</div>
+			</footer>
+</main>
+<script src="blogs.js"></script>
+<!-- <script src="https://vision.googleapis.com/v1/images:annotate?key=AIzaSyAsjKKuNVOSumDO2kpa2XUdnbQk_RGp-ME&callback=initialize"></script>
+ -->
+</body>
+</html>
