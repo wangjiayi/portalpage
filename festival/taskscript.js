@@ -128,12 +128,12 @@ function startsearch(){
 		alert("Sorry, we do not have this continents. Plese enter world continents like: Asia, Africa, Australia......");
 	}	
 }
-clear.addEventListener("click",clearfilter);
-function clearfilter(){
-	for(i = 0; i <= 5; i++){
-			blocks[i].style.display = "block";
-		}	
-}
+// clear.addEventListener("click",clearfilter);
+// function clearfilter(){
+// 	for(i = 0; i <= 5; i++){
+// 			blocks[i].style.display = "block";
+// 		}	
+// }
 search.addEventListener("click",showBox);
 function showBox(){
     if(middlebox.style.display == "none"){

@@ -128,7 +128,7 @@ function showarticle2(){
 	}
 	
 }
-reset1.addEventListener("click",showarticle2);
+reset1.addEventListener("click",showarticle1);
 reset2.addEventListener("click",showarticle2);
 
 

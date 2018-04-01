@@ -168,7 +168,6 @@ button{
 #l_button{
   height: 60px;
   width: 35px;
-  border-radius: none;
   border-top-left-radius: 35px;
   border-bottom-left-radius: 35px;
   position: absolute;
@@ -178,7 +177,6 @@ button{
 #r_button{
   height: 60px;
   width: 35px;
-  border-radius: none;
   border-top-right-radius: 35px;
   border-bottom-right-radius: 35px;
   position: absolute;
@@ -312,7 +310,7 @@ article {
   display: none;
 }
 .form_div {
-  margin: 6%;
+  margin: 4%;
 }
 label {
   width: 5em;
